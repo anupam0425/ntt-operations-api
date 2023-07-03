@@ -36,17 +36,6 @@ jobs:
     inputs:
       secureFile: settings.xml
       
-  - task: SonarQubePrepare@5
-    displayName: Code Validation and Static Analysis
-    inputs:
-      SonarQube: AzurePOCDevOps
-      scannerMode: Other
-      configMode: manual
-      cliProjectKey: $(BuildParameters.cliProjectKey)
-      extraProperties: >-
-
-        sonar.host.url= $(sonarHost)
-
   - task: Maven@3
     displayName: Test
     inputs:
