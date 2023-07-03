@@ -96,12 +96,6 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
 			username="${sfdc.username}" password="${sfdc.password}"
 			securityToken="${sfdc.token}" url="${sfdc.url}" />
 	</salesforce:sfdc-config>
-	<import doc:name="Import common library"
-		file="common-logging.xml"
-		doc:id="d20fa5d4-dc93-4653-944f-0a5313f6ed69" />
-	<import doc:name="Import sync exception handler"
-		doc:id="53e73a06-2bc5-4dad-850e-eddb43587bc4"
-		file="mule-sync-exception-handler.xml" />
 	<configuration doc:name="Configuration"
 		doc:id="e1ba509d-7ff8-4879-8cfa-0990514dd1b6"
 		defaultErrorHandler-ref="global-sync-exception-strategy" />
