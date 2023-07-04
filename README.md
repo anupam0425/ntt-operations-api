@@ -8,6 +8,9 @@ The benefit of using this template project is the time that will be saved config
 
 The components that are already configured are:
 
+
+
+
 Secure Properties Configuration, for environment-specific values
 Global Properties Configuration, for values common to all environments
 API Autodiscovery Configuration
